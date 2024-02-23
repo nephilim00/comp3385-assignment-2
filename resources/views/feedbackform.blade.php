@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="container">
-    <h2>Feedback Form</h2>
-    <form action="/feedback/send" method="POST">
-        @csrf <!-- CSRF token for security -->
+    <h1>Feedback Form</h1>
+    <form action="{{ url('/feedback/send') }}" method="POST">
+        @csrf <!-- CSRF Token -->
         <div class="form-group">
-            <label for="fullName">Full Name (Required)</label>
-            <input type="text" class="form-control" id="fullName" name="fullName" required>
+            <label for="full-name">Full Name (Required)</label>
+            <input type="text" class="form-control" id="full-name" name="full_name" required>
         </div>
         <div class="form-group">
             <label for="email">Email (Required)</label>
@@ -17,8 +17,8 @@
             <label for="comments">Comments (Required)</label>
             <textarea class="form-control" id="comments" name="comments" required></textarea>
         </div>
+        <p>Let us know what you think of our website.</p>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
 @endsection
-

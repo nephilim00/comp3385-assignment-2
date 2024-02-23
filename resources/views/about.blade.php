@@ -6,12 +6,3 @@
 @endsection
 
 
-<nav>
-    <!-- Existing navigation links -->
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <!-- Add the new Feedback link below -->
-        <li><a href="/feedback">Feedback</a></li>
-    </ul>
-</nav>

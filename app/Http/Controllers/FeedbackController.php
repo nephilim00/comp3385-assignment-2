@@ -20,3 +20,6 @@ class FeedbackController extends Controller
         return redirect('/feedback')->with('message', 'Feedback sent successfully!');
     }
 }
+
+
+
