@@ -30,3 +30,7 @@ Route::get('/feedback', [FeedbackController::class, 'create'])->name('feedback.c
 
 // Route to handle the form submission
 Route::post('/feedback/send', [FeedbackController::class, 'send'])->name('feedback.send');
+
+
+
+Route::get('/feedback/success', [FeedbackController::class, 'success'])->name('feedback.success');
